@@ -1,0 +1,127 @@
+/*-- Structure --*/
+#container {
+  width: 1040px;
+  margin: auto;
+}
+
+
+/*-- Box Model --*/
+*,
+*:before,
+*:after {          
+   box-sizing: border-box;
+}
+
+/*-- Font styles --*/
+
+p, body {
+  font-family: arial;
+  font-size: 12px;
+  display: block;
+  margin-bottom: .5em;
+}
+
+/*-- Global Styles --*/
+
+#header, #section, section #aside, section #article, article, footer, nav {
+  border: 1px dashed #000;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  display: inline-block;
+  width: 47px;
+  height: 30px;
+  border: 1px solid #000; 
+  text-align: center;
+}
+
+.col-3 {
+  width: 243px;
+  vertical-align: top;
+}
+
+.col-6 {
+  width: 486px;
+  height: 100px;
+}
+
+.col-9 {
+  width: 729px;
+  vertical-align: top;
+}
+
+
+/*-- Styles --*/
+
+#container {
+  background: #1815FF;
+  padding: 10px 0;
+}
+
+#header {
+  background: #FF0000;
+  height: 100px;
+}
+
+#section {
+  background: green;
+}
+
+#aside {
+  background: #fff;
+}
+
+#sidebar {
+  background: #1815FF;
+}
+
+section #aside.inset {
+  background: #999;
+}
+
+section #body {
+  background: #6D008A;
+}
+
+#footer {
+  background: #E87F0C;
+}
+
+#footer nav {
+  background: #5398FF;
+}
+
+article {
+  background: #E8DD0C;
+}
+
+#main {
+  height: 177px;
+}
+
+ section #sidebar, section #body-main, .col-3, .col-6, .col-9 {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000; 
+  text-align: center; 
+  box-sizing: border-box;
+}
+
+footer {
+  height: 125px;
+}
+
+
+/*-- Clearfix --*/
+
+.row:after,
+.wrapper:after
+.column:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
